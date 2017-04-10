@@ -28,18 +28,26 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         mapView.showsUserLocation = true
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
-        DispatchQueue.main.async {
-            
-            self.locationManager.startUpdatingLocation()
         
-        }
     }
 
+  
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+   
+    @IBAction func myLocation(_ sender: UIButton) {
+        DispatchQueue.main.async {
+            
+            self.locationManager.startUpdatingLocation()
+            self.locationManager.stopUpdatingLocation()
+            
+        }
+    }
+    
     @IBAction func textFieldReturn(_ sender: Any) {
         mapView.removeAnnotations(mapView.annotations)
         searchingText = textSearch.text!

@@ -41,7 +41,7 @@
                                         </items>
                                     </toolbar>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VH-Ch-Gty">
-                                        <rect key="frame" x="0.0" y="25" width="414" height="30"/>
+                                        <rect key="frame" x="0.0" y="25" width="367" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -51,6 +51,17 @@
                                             <action selector="textFieldReturn:" destination="X0N-cV-Xq9" eventType="editingDidEnd" id="oC2-Ws-9g3"/>
                                         </connections>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0p-kx-5Gz">
+                                        <rect key="frame" x="366" y="25" width="48" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.153828141508215" green="0.27467837162174003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Me">
+                                            <color key="titleColor" red="0.98482896323364244" green="0.95571695409695068" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="myLocation:" destination="X0N-cV-Xq9" eventType="touchUpInside" id="Zps-hn-RbL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -64,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuD-nP-Kqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115.9420289855072" y="244.56521739130437"/>
+            <point key="canvasLocation" x="1114.4927536231885" y="244.56521739130437"/>
         </scene>
     </scenes>
 </document>
